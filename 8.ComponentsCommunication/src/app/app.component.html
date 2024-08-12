@@ -1,0 +1,4 @@
+<div>
+  <h1>Task List</h1>
+  <app-task *ngFor="let t of tasks" [task]="t" (taskRemoved)="removeTask(t)"></app-task>
+</div>
